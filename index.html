@@ -1,25 +1,62 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Assignment-1</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="counter-body">
-                <h1 id="title">Counter</h1>
-                <span id="value">0</span>
-            <div>
-                <span id="message" style="display: none; font-size: 25px;"> </span>
-            </div>
+<!--
+Great job with the code on implementing the logic for updating the message based on the count! 🎉
+Keep up the fantastic effort! 
+You're really mastering these concepts, and with just a bit more refinement, you'll be writing even more efficient and optimized code. 
+Keep practicing and exploring new ways to enhance your solutions!"
+-->
 
-            <div class="button-container">
-                    <button id="decrease" class="btn decrease">Decrease</button>
-                    <button id="reset" class="btn reset">Reset</button>
-                    <button id="increase" class="btn increase">Increase</button>
-            </div>
-            </div>
-        </div>
-    <script src="./script.js"></script>
+<!-- BOILER PLATE CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
 </body>
+</html>
+-->
+<!-- 
+1. Your code is missing <!DOCTYPE html> which is an error.
+    <!DOCTYPE html> is essential as it tells the browser that this is an HTML5 document.
+    Typing "!" in a blank HTML file and pressing Enter (or Tab) generates this boilerplate automatically.     
+2.  In html tag, lang attribute is missing
+    Setting lang="en" helps browsers, screen readers, and search engines recognize that the content is in English. For other languages, you would adjust the code (e.g., lang="fr" for French).
+-->
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-1</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!--
+    Consider using semantic HTML elements instead of <div> tags to improve accessibility and readability.
+    For example, use <main> for main content, <section> for grouped content, and <nav> for button containers.
+    Read: HTML Semantic Elements 
+    -->
+    <div class="container">
+      <div class="counter-body">
+        <!-- Use classes for styling instead of IDs. Classes are more flexible and reusable. -->
+        <h1 id="title">Counter</h1>
+        <span id="value">0</span>
+        <div>
+          <!-- Avoid using inline styles. It's better to use a separate CSS file for easier updates and cleaner code. -->
+          <span id="message" style="display: none; font-size: 25px"> </span>
+        </div>
+
+        <div class="button-container">
+          <!-- Use classes for styling instead of IDs. Classes are more flexible and reusable. -->
+          <button id="decrease" class="btn decrease">Decrease</button>
+          <button id="reset" class="btn reset">Reset</button>
+          <button id="increase" class="btn increase">Increase</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
